@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Poppins-Black";
+    src: url("../fuentes/Poppins-Black.ttf");
+}
+
+
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container, .promociones-container, .promocion, input[type="text"], button, .footer, .logo {
+    box-sizing: border-box; 
+}
+
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 5%;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+}
+
+.menu {
+    text-align: center;
+}
+
+a:hover {
+    color: #F6B134;
+}
+
+.logo {
+    font-size: 45px;
+    text-align: center;
+    max-width: 500px;
+    height: 200px;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+input[type="text"] {
+    padding: 15px; 
+    border-radius: 6px;
+    border: 1px solid #ccc; 
+    outline: none;
+    text-align: center; 
+    height: 50px;
+    width: 100%; 
+    max-width: 600px; 
+}
+
+button {
+    background-color: #8e0e0e;
+    padding: 10px;
+    border: 0;
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+    color: #000000;
+    cursor: pointer;
+    height: 50px; 
+}
+
+button:hover {
+    background-color: #5f0303;
+}
+
+.subtitulo h2 {
+    font-size: 55px;
+    line-height: 1; 
+    color: #ee9f0c;
+    text-transform: uppercase;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.linea h1 {
+    background-color: #8e0e0e;
+    max-width: 100%;
+    height: 8px;
+    margin-left: 0px;
+}
+
+.linea-vertical {
+    max-width: 4px;
+    background-color: #f7b809;
+    margin-left: 30px;
+}
+
+.promociones-container {
+    display: flex;
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    padding: 0 1rem; 
+    box-sizing: border-box; 
+}
+
+.promocion {
+    display: flex;
+    flex-direction: row; 
+    flex: 1 1 45%; 
+    box-sizing: border-box; 
+    padding: 1rem;
+    margin-bottom: 1.5rem; 
+    max-width: 100%; 
+    position: relative; 
+    border: 2px solid #cccccc; 
+    border-radius: 5px; 
+}
+
+.promocion-content {
+    display: flex;
+    flex-direction: row; 
+}
+
+.promocion-img {
+    width: 50%; 
+    height: auto; 
+}
+
+.promocion-details {
+    flex: 1; 
+    padding: 1rem;
+    position: relative; 
+}
+
+.promocion-details img {
+    width: 30px; 
+    position: absolute;
+    bottom: 2px; 
+    right: 2px; 
+}
+
+.makis h1, .makis p {
+    margin: 0;
+    color: #ffffff; 
+}
+
+.makis img {
+    width: 30px; 
+}
+
+
+.fondo {
+    padding: 170px 0;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+
+
+
+.footer {
+    width: 100px;
+    margin-left: 100px;
+}
+
+.divisiones {
+    display: flex;
+}
+
+.row {
+    padding-left: 10%;
+}
+
+
+.modal-body .btn-custom {
+    background-color: #8e0e0e; 
+    border: none;
+    color: #ffffff; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body .btn-custom i {
+    margin-right: 10px; 
+}
+
+.modal-body .btn-custom:hover {
+    background-color: #5f0303; 
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .promociones-container {
+        display: block; 
+    }
+
+    .promocion {
+        flex-direction: column; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .promocion-content {
+        flex-direction: column; 
+    }
+
+    .promocion-img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .promocion-details {
+        width: 100%; 
+        position: static; 
+        padding: 1rem;
+    }
+
+    .promocion-details img {
+        width: 30px; 
+        position: static; 
+        margin: 0 auto; 
+        display: block; 
+    }
+
+    .container {
+        padding: 0 1rem; /* Añade padding horizontal para evitar desbordamientos */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+}

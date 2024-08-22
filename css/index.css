@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Poppins-Black";
+    src: url("../fuentes/Poppins-Black.ttf");
+}
+
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 45px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 5%;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+    color: #F6B134;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+input[type="text"] {
+    padding: 15px; 
+    border-radius: 6px;
+    border: 1px solid #ccc; 
+    outline: none;
+    text-align: center; 
+    height: 50px;
+    width: 100%; 
+    max-width: 600px; 
+}
+
+button {
+    background-color: #8e0e0e;
+    padding: 10px;
+    border: 0;
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+    color: #000000;
+    cursor: pointer;
+    height: 50px; 
+}
+
+button:hover {
+    background-color: #5f0303;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.row h1 {
+    font-size: 55px;
+    line-height: 60%;
+    color: #F6B134;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.row p {
+    font-size: 30px;
+    line-height: 40px;
+    color: #F6B134;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.card {
+    width: 80%;
+    height: auto;
+    margin-left: 65px;
+    text-align: center;
+    background-color: #470707;
+}
+
+.promociones-container {
+    display: flex;
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    padding: 0 1rem; 
+    box-sizing: border-box; 
+}
+
+.promocion {
+    display: flex;
+    flex-direction: row; 
+    flex: 1 1 45%; 
+    box-sizing: border-box; 
+    padding: 1rem;
+    margin-bottom: 1.5rem; 
+    max-width: 100%; 
+    position: relative; 
+    border: 2px solid #cccccc; 
+    border-radius: 5px; 
+}
+
+.promocion-content {
+    display: flex;
+    flex-direction: row; 
+}
+
+.promocion-img {
+    width: 50%; 
+    height: auto; 
+}
+
+.promocion-details {
+    flex: 1; 
+    padding: 1rem;
+    position: relative; 
+}
+
+.promocion-details img {
+    width: 30px; 
+    position: absolute;
+    bottom: 2px; 
+    right: 2px; 
+}
+
+.makis h1, .makis p {
+    margin: 0;
+    color: #ffffff; 
+}
+
+.makis img {
+    width: 30px; 
+}
+
+.linea h1 {
+    background-color: #8e0e0e;
+    width: 50%;
+    height: 10px;
+    margin-left: 350px;
+}
+
+.linea1 h1 {
+    background-color: #8e0e0e;
+    width: 40%;
+    height: 10px;
+    margin-left: 140px;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.imagendeinicio1 {
+    text-align: center;
+}
+
+.favoritos {
+    text-align: center; /* Asegura que el texto dentro de .favoritos esté centrado */
+}
+
+.favoritos h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F6B134;
+    text-transform: uppercase;
+    margin: 0 auto; /* Asegura que el margen se ajuste automáticamente para centrar */
+    padding: 0; /* Elimina el padding si es necesario */
+}
+
+.linea-vertical {
+    width: 4px;
+    right: 4px;
+    background-color: #f7b809;
+    margin-left: 3%;
+}
+
+.makis h1 {
+    color: #F6B134;
+    font-family: "Poppins-Black";
+    padding: 10px 5%;
+}
+
+.makis p {
+    color: #F6B134;
+    padding: 10px 50px;
+}
+
+.fondo {
+    padding: 170px 0;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.footer {
+    width: 100px;
+    margin-left: 100px;
+}
+
+.divisiones {
+    display: flex;
+}
+
+.row {
+    padding-left: 10%;
+}
+
+.modal-body .btn-custom {
+    background-color: #8e0e0e; 
+    border: none;
+    color: #ffffff; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body .btn-custom i {
+    margin-right: 10px; 
+}
+
+.modal-body .btn-custom:hover {
+    background-color: #5f0303; 
+}
+
+/* Responsive Design */
+
+/* Para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 80%; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    .menu ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .menu li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .promociones-container {
+        display: block; /* Cambia el contenedor de promociones a bloque en pantallas pequeñas */
+    }
+
+    .promocion {
+        flex-direction: column; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .promocion-content {
+        flex-direction: column; 
+    }
+
+    .promocion-img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .promocion-details {
+        width: 100%; 
+        position: static; 
+        padding: 1rem;
+    }
+
+    .promocion-details img {
+        width: 30px; 
+        position: static; 
+        margin: 0 auto; 
+        display: block; 
+    }
+
+    .container {
+        padding: 0 1rem; /* Añade padding horizontal para evitar desbordamientos */
+    }
+
+    .footer {
+        width: 100%; /* Ajusta el ancho del footer */
+        margin-left: 0; /* Elimina el margen izquierdo del footer */
+    }
+
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer div {
+        margin-bottom: 20px;
+    }
+
+    .favoritos h2 {
+        font-size: 40px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        padding: 0 1rem; /* Añade padding para evitar desbordamientos */
+    }
+}
+
+/* Para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Ajustes opcionales para pantallas medianas si es necesario */
+    .logo {
+        width: 90%; /* Ajusta el tamaño del logo */
+    }
+
+    .footer {
+        width: 100%; /* Asegura que el footer se ajuste al ancho completo */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+}
+
+/* Para pantallas grandes */
+@media only screen and (min-width: 1025px) {
+    /* Ajustes opcionales para pantallas grandes si es necesario */
+}
